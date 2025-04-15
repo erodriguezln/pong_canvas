@@ -1,6 +1,6 @@
 import { Vector2D } from '../utils/Vector2D.js';
 import { createBox } from '../utils/utils.js';
-
+//TODO implement Reaction Delay, Prediction Error, Inconsistent Tracking, Random Mistakes
 export class EnemyState {
   constructor(enemy) {
     this.enemy = enemy;

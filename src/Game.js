@@ -43,9 +43,9 @@ export class Game {
   handlePointScored() {
     const scores = this.scoreManager.scores;
 
-    if (scores.playerOne >= 2) {
+    if (scores.playerOne >= 5) {
       this.changeState(new GameOverState(this, "Player One Wins!"));
-    } else if (scores.playerTwo >= 2) {
+    } else if (scores.playerTwo >= 5) {
       this.changeState(new GameOverState(this, "Player Two Wins!"));
     } else {
       this.changeState(new GameInitialState(this));
